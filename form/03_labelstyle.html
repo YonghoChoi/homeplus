@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03_labelstyle</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Alata|Nanum+Pen+Script&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/bccb306c59.css">
+    
+    <style>
+        div {
+           width:700px;
+           height:50px;
+           padding:10px;
+           border-bottom:1px solid #caf            
+        }
+        
+        label {display:inline-block;
+            line-height:50px;
+            text-align:center;
+            color:#fff;
+            width:200px;
+            height:50px;
+            border-right:0px solid #0100FF;
+            background:#6799FF;
+            font-family: 'Alata', sans-serif;
+            font-family: 'Nanum Pen Script', cursive;
+            font-size:30px;
+            
+        }
+        
+        .fa{font-size:30px; color:red}
+    
+    </style>
+    
+    
+    
+</head>
+<body>
+    <h1>03_labelstyle</h1>
+    
+     <form action="labelreg.html">
+       <div>
+            <label for="pid" >아이디</label>
+            <input type="text" id="pid" name="pid" id="pid">
+       </div>
+     
+        <div >  
+            <label for="pw">Password </label>
+            <input type="password" name="pw" id="pw">
+        </div>
+        
+        <div>  
+        
+            <label for="gender">성별</label>
+                <input type="radio" name="gender" value="m">남자
+                <input type="radio" name="gender" value="f">여자
+                <input type="radio" name="gender" value="it">IT
+        </div>
+           
+   
+       <div >          
+             <label for="hobby">취미</label>
+                <input type="checkbox" name="sleep">잠
+                <input type="checkbox" name="game">게임
+                <input type="checkbox" name="fishing">낚시        
+        </div>
+        
+       <div >                 
+            <label for="email">이메일</label>            
+              <input type="text" name="email1">@
+                <select name="email2" id="">
+                  <option value="naver.com">네이버</option>
+                  <option value="google.com">구글</option>
+                  <option value="nate.com">네이트</option>
+                  <option value="daum.net">다음</option>    
+        </select>
+        </div>
+        
+        
+       <div >     
+           <input type="submit" value="가입">
+       </div>
+            
+    </form>
+    <i class="fa fa-bug" aria-hidden="true"></i>
+    <i class="fa fa-airbnb" aria-hidden="true"></i>
+</body>
+</html>

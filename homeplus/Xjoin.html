@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>join</title>
+</head>
+<body>
+   <h1>회원가입</h1>
+   <form>
+      <table width="600" height="500"
+    bgcolor="#F6F6F6"
+    align="center">
+ 
+          <tr>
+              <td>아이디</td>
+              <td>
+              <input name="id" type="text" size="30" maxlength="10"
+              style="height:33px;"
+              placeholder="6자 이상의 영문 혹은 영문과 숫자를 조합">
+
+              
+              <input type="button" value="중복확인"
+              style="display:inline-block;
+                line-height:40px;
+                text-align:center;
+                color:#fff;
+                width:150px;
+                height:40px;
+                margin:10px;
+                border:1px solid #FFA7A7;
+                background:#F15F5F">             
+              </td>
+          </tr>
+          
+          <tr>
+              <td>비밀번호</td>
+              <td><input name="pw" type="Password" size="41"
+              style="height:33px;" 
+              placeholder="비밀번호를 입력하세요"></td>
+          </tr>
+          <tr>
+                   
+          <tr>
+          <td>비밀번호 확인</td>
+          <td><input name="pw" type="Password" size="41" 
+          style="height:33px"
+          
+          placeholder="비밀번호를 한번 더 입력하세요"></td>
+          </tr>
+          
+          <tr>
+              <td>이름</td>
+              <td><input name="name" type="text" size="41" maxlength="10"
+              style="height:33px"
+              placeholder="이름을 입력하세요">         
+              </td>
+          </tr>
+             
+          <tr>
+              <td>email</td>
+              <td><input name="email1" size="29">@
+                 <select name="email2">
+                  <option value="naver.com">네이버</option>
+                  <option value="google.com">구글</option>
+                  <option value="daum.net">다음</option>
+                  <option value="nate.com">네이트</option>
+              </select>
+               
+              </td>
+          </tr>
+           <tr>
+              <td>전화</td>
+              <td>
+                <select name="tell">
+                   <option>010</option>
+                   <option>011</option>                   
+                   <option>016</option>                 
+                   <option>017</option>                 
+                   <option>018</option>
+                   <option>019</option>
+                                                                  
+                </select>-
+                <input type="text" name="tel2" size="13" maxlength="4">-
+                <input type="text" name="tel3" size="13" maxlength="4">
+
+          </tr>
+             <td>배송주소</td>
+             <td><input type="button" value="주소검색"
+                style="display:inline-block;
+                line-height:40px;
+                text-align:center;
+                color:#fff;
+                width:150px;
+                height:40px;
+                margin:10px;
+                border:1px solid #FFA7A7;
+                background:#F15F5F"
+             
+             ></td>     
+             
+             
+              
+              
+              
+          <tr>
+              <td>성별</td>
+              <td><input type="radio" name="gender" value="m">남
+              <input type="radio" name="gender" value="f" checked>여
+              <input type="radio" name="gender" value="it">선택안함
+              </td>
+          </tr>
+             
+         <tr>
+              <td>생년월일</td>
+              <td><input name="id" type="text" size="41" maxlength="10" placeholder="YY/MM/DD">        
+              </td>
+          </tr>          
+              
+
+
+
+      </table>
+       
+       
+       
+       
+       
+   </form>
+   
+   <br/>
+   <br/>
+   
+   <table width="600" height="300"
+       bgcolor="#F6F6F6"
+       align="center">
+       
+        <tr style="font-size:13px">
+            <td rowspan="6" width="160">이용약관</td>
+            <td>
+            <input type="checkbox" name="14">
+            이용약관(필수) 약관보기></td>
+        </tr>
+        <tr style="font-size:13px">
+            <td>
+            
+            <input type="checkbox" name="14">
+            개인정보처리방침(필수) 약관보기></td>
+
+        </tr>
+        <tr style="font-size:13px">
+            <td>
+            
+            <input type="checkbox" name="14">
+            개인정보처리방침(선택) 약관보기></td>
+
+        </tr>
+        <tr style="font-size:13px">
+            <td>
+            <input type="checkbox" name="14">        
+            무료배송, 할인쿠폰 등 혜택/정보 수신(선택)</td>
+ 
+        </tr>
+        <tr style="font-size:13px">
+           
+            <td>
+            <input type="checkbox" name="14">
+            SMS 이메일 수신 확인(선택)</td>
+
+        </tr>
+        <tr style="font-size:13px">
+            <td>
+            <input type="checkbox" name="14">
+            
+            
+            본인은 만 14세 이상입니다(필수)</td>
+
+        </tr>
+        
+                  <tr>
+              <td colspan="2" align="center">
+                <input type="submit" value="회원가입"
+                    style="display:inline-block;
+                    line-height:40px;
+                    text-align:center;
+                    color:#fff;
+                    width:150px;
+                    height:40px;
+                    margin:10px;
+                    border:1px solid #FFA7A7;
+                    background:#F15F5F">
+                  
+                  
+              </td>
+       
+       
+       
+   </table>
+   
+    
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>02_login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans KR';
+        }
+
+
+        header {
+            background-color: white;
+            width: 100%;
+            height: 100px;
+            margin: 0px auto;
+            padding: 20px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .topmenu {
+            display: inline-block;
+
+
+        }
+
+
+        nav {
+            background-color: white;
+            height: 50px;
+            margin: 0px auto;
+            text-align: center;
+
+        }
+
+        .menu {
+            border: 0px solid #000;
+            width: 150px;
+            height: 30px;
+            text-align: center;
+            display: inline-block;
+            font-size: "2px";
+        }
+
+        label {
+            display: inline-block;
+            line-height: 50px;
+            text-align: center;
+            color: black;
+            width: 200px;
+            height: 50px;
+            border-right: 0px solid #0100FF;
+            background: #fff;
+            font-family: 'Alata', sans-serif;
+            font-size: 15px;
+            margin: 5px;
+
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 300px;
+            height: 20px;
+            padding: 10px;
+            margin: 5px;
+            border: solid 1px grey;
+            border-radius: 5px;
+        }
+
+        input[type="button"] {
+            width: 100px;
+            height: 40px;
+            background-color: #F15F5F;
+            box-sizing: initial;
+            border: 1px solid gray;
+            margin: 5px;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+
+        .footer {
+            background-color: #EAEAEA;
+            width: 80%;
+            height: 100px;
+            margin: 0px auto;
+            padding: 10px;
+            font-size: 10px;
+
+        }
+
+
+        footer {
+            margin-top: 80px;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div align="right" style="margin-right:30px;
+            font-size: 13px">
+            <div class="topmenu">회원가입</div>
+            <div class="topmenu">로그인</div>
+            <div class="topmenu">고객센터</div>
+        </div>
+        <div>
+            <a href="../homeplus/01_main.html">
+                <img src="../homeplus/image/logo2.png" width="180px" height="80px">
+            </a>
+        </div>
+
+
+
+    </header>
+
+
+    <nav>
+        <div class="menu">전체카테고리</div>
+        <div class="menu">신상품 </div>
+        <div class="menu">베스트 </div>
+        <div class="menu">알뜰쇼핑</div>
+        <div class="menu">이벤트</div>
+
+    </nav>
+
+    <h2 align="center" style="margin-bottom:30px">회원 가입</h2>
+
+    <form action="labelreg.html">
+        <div>
+            <label for="pid">아이디</label>
+            <input type="text" id="pid" name="pid" maxlenth="10" placeholder="6자 이상의 영문 혹은 영문과 숫자를 조합">
+            <input type="button" name="pid" value="중복 확인">
+        </div>
+
+        <div>
+            <label for="pw">비밀번호 </label>
+            <input type="password" name="pw" id="pw" maxlenth="10" placeholder="비밀번호를 입력하세요">
+        </div>
+
+        <div>
+            <label for="pw">비밀번호확인 </label>
+            <input type="password" name="pw" id="pw" maxlenth="10" placeholder="비밀번호를 한번 더 입력하세요">
+        </div>
+        <div>
+            <label for="name">이름</label>
+            <input type="text" id="name" name="pid" placeholder="이름을 입력 하세요">
+        </div>
+        <div>
+            <label for="email">이메일</label>
+            <input type="text" name="email1">@
+            <select name="email2" style="width:90px ; height:40px">
+                <option value="naver.com">네이버</option>
+                <option value="google.com">구글</option>
+                <option value="nate.com">네이트</option>
+                <option value="daum.net">다음</option>
+            </select>
+        </div>
+        <div>
+
+            <label for="phone">휴대폰</label>
+            <input type="text" name="phone" id="phone" placeholder="숫자만 입력 하세요">
+
+        </div>
+
+        <div>
+            <label for="address">배송주소</label>
+            <input type="button" name="address" value="주소 검색">
+
+
+        </div>
+
+
+        <div>
+
+            <label for="gender">성별</label>
+            <input type="radio" name="gender" value="m">남자 &nbsp;&nbsp;&nbsp;
+            <input type="radio" name="gender" value="f">여자 &nbsp;&nbsp;&nbsp;
+            <input type="radio" name="gender" value="no">선택안함
+        </div>
+
+
+        <div>
+            <label for="birth">생년월일</label>
+            <input type="text" name="birth" placeholder="YYYY / MM / DD">
+
+
+        </div>
+
+
+
+
+        <div align="center">
+            <input type="submit" value="가입" style="background-color: #F15F5F ; border:1px solid grey; width:100px ; height:40px ; margin:10px ;            border-radius: 5px ; color:#fff">
+        </div>
+
+    </form>
+
+    <footer>
+        <div class="footer">
+
+            <p>
+                footer
+
+
+
+            </p>
+
+
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

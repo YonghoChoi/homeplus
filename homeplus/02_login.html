@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>02_login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans KR';
+        }
+
+
+        header {
+            background-color: white;
+            width: 100%;
+            height: 100px;
+            margin: 0px auto;
+            padding: 20px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .topmenu {
+            display: inline-block;
+
+
+        }
+
+
+        nav {
+            background-color: white;
+            height: 50px;
+            margin: 0px auto;
+            text-align: center;
+
+        }
+
+        .menu {
+            border: 0px solid #000;
+            width: 150px;
+            height: 30px;
+            text-align: center;
+            display: inline-block;
+            font-size: "2px";
+        }
+
+        .btn {
+            border: 1px solid gray;
+            background-color: #F15F5F;
+            box-sizing: initial;
+            color: #fff;
+            border: solid 1px grey;
+            border-radius: 5px;
+
+        }
+
+        input {
+            width: 300px;
+            height: 30px;
+            padding: 10px;
+            margin: 10px;
+            border: solid 1px grey;
+            border-radius: 5px;
+        }
+
+        .footer {
+            background-color: #EAEAEA;
+            width: 80%;
+            height: 100px;
+            margin: 0px auto;
+            padding: 10px;
+            font-size: 10px;
+
+        }
+
+        footer {
+            margin-top: 80px;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div align="right" style="margin-right:30px;
+            font-size: 13px">
+            <div class="topmenu">회원가입</div>
+            <div class="topmenu">로그인</div>
+            <div class="topmenu">고객센터</div>
+        </div>
+        <div>
+            <a href="../homeplus/01_main.html">
+                <img src="../homeplus/image/logo2.png" width="180px" height="80px">
+            </a>
+        </div>
+
+
+
+    </header>
+
+
+    <nav>
+        <div class="menu">전체카테고리</div>
+        <div class="menu">신상품 </div>
+        <div class="menu">베스트 </div>
+        <div class="menu">알뜰쇼핑</div>
+        <div class="menu">이벤트</div>
+
+    </nav>
+
+    <h2 align="center" style="margin-bottom:30px">로그인</h2>
+    <form>
+        <div align="center">
+            <input class="textbox " type="text" id="pid" name="pid">
+
+        </div>
+
+        <div align="center">
+            <input class="textbox" type="password" id="pw" name="pw"><br />
+
+            <p style="margin-bottom: 20px">
+                <a href="http://www.naver.com">
+                    <font size="2px">아이디 찾기 / 비밀번호 찾기</font>
+                </a>
+            </p>
+        </div>
+
+        <div align="center">
+            <input class="btn" type="submit" name="logins" value="로그인">
+            <br />
+            <a href="03_join.html">
+                <input class="btn" type="button" value="회원가입">
+            </a>
+        </div>
+
+        <footer>
+            <div class="footer">
+
+                <p>
+                    footer
+
+
+
+                </p>
+
+
+
+            </div>
+        </footer>
+
+    </form>
+
+</body>
+
+</html>
