@@ -49,31 +49,35 @@
            width: 1000px;
            height: 30px;
            margin: 0 auto;
+           overflow: hidden;
        }
 
-       .topmenu {
-           width: 200px;
+       .topmenu,
+       .topmenu1 {
+           width: 160px;
            height: 30px;
            font-size: 16px;
            float: left;
            list-style: none;
            background-color: white;
            overflow: hidden;
-           transition: 1s;
-           z-index: 10;
-           /*position: relative;*/
+           transition: 0.3s;
+           z-index: 1;
+           position: relative;
        }
 
        .category {
            width: 200px;
            height: 30px;
-           background-color: darkgray;
-           z-index: 1;
+           background-color: white;
+           text-align: left;
+           padding: 0px 50px;
+           margin:10px 0px;
        }
 
-       .topmenu:hover {
-           height: 180px;
-           left: 0px;
+       .topmenu1:hover {
+           height: 400px;
+           /*left: 0px;*/
        }
 
        a {
@@ -82,7 +86,7 @@
        }
 
        a:hover {
-           color: #F15F5F;
+           color: #f14242;
        }
 
        footer {

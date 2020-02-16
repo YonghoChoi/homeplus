@@ -3,13 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>06_notice</title>
+    <title>08_favorite</title>
     <link rel="stylesheet" href="homeplus.css">
-
     <style>
         .wrapper {
             width: 1100px;
-            /*position: relative;*/
             overflow: hidden;
             margin: 0px auto;
             margin-top: 50px;
@@ -19,14 +17,44 @@
         .aside {
             float: left;
             width: 200px;
+            margin-right: 50px;
             margin: 0px 30px;
-            border-bottom: 1px solid #D5D5D5;
-            box-sizing: border-box;
         }
-        
-        .ntwrap{
+
+        .aside>div {
+            border: 1px solid #D5D5D5;
+            border-collapse: collapse;
+            box-sizing: border-box;
+            background-color: #F6F6F6;
+            height: 50px;
+            line-height: 50px;
+            padding: 0px 20px;
+            font-size: 12px;
+        }
+
+        .aside>div:hover {
+            background-color: #BDBDBD;
+        }
+
+        .aside>div:nth-child(1) {
+            background-color: white;
+            font-size: 24px;
+            font-weight: 500;
+            border: 0px;
+            margin-bottom: 20px;
+            padding: 0px;
+        }
+
+        .section {
             width: 800px;
-            float:left;
+            float: left;
+        }
+
+        .oderbox {
+            width: 800px;
+            height: 200px;
+            float: left;
+            border: 1px solid #D5D5D5;
         }
 
         .subtitle {
@@ -41,51 +69,31 @@
             margin: 15px;
         }
 
-        .aside>div {
-            border-collapse: collapse;
-            background-color: #F6F6F6;
+        .title {
             height: 50px;
             line-height: 50px;
             padding: 0px 20px;
-            font-size: 12px;
-            border-top: 1px solid #D5D5D5;
-            border-right: 1px solid #D5D5D5;
-            border-left: 1px solid #D5D5D5;
-        }
-        
-        .aside>div:hover{
-            background-color:#BDBDBD;
-        }
-
-        .aside>div:nth-child(1) {
-            background-color: white;
-            font-size: 24px;
-            font-weight: 500;
-            border: 0px;
-            margin-bottom: 20px;
-            padding: 0px;
-        }
-
-        table {
-            float: left;
-            width: 800px;
-            border-top: 2px solid #f14242;
-            border-bottom: 2px solid #f14242;
-            border-collapse: collapse;
-        }
-
-        th,
-        td {
-            height: 50px;
             border-bottom: 1px solid #D5D5D5;
-            font-size: 14px;
-            padding: 10px;
-            text-align: center;
-            font-size: 12px;
         }
 
-        tr>td:nth-child(3) {
-            text-align: left;
+        .content {
+            padding: 10px 10px;
+            overflow: hidden;
+        }
+
+        .content>img {
+            width: 100px;
+            height: 130px;
+            float: left;
+        }
+
+        .odtext {
+            float: left;
+        }
+
+        .odtext>div {
+            font-size: 13px;
+            margin: 15px;
         }
 
         .pagewrap {
@@ -128,7 +136,6 @@
             <img src="image/logo2.png" width="150px" height="60px">
         </a>
     </div>
-
     <nav>
         <ul class="gnb">
             <li class="topmenu">
@@ -148,35 +155,27 @@
             </li>
         </ul>
     </nav>
-
     <div class="wrapper">
         <div class="aside">
-            <div>고객센터</div>
-            <div><a href="#">공지사항</a></div>
-            <div><a href="#">자주하는질문</a></div>
+            <div>마이 홈플러스</div>
+            <div><a href="07_order.html">주문 내역</a></div>
+            <div><a href="08_favorite.html">늘 사는 것</a></div>
+            <div><a href="08_favorite.html">개인 정보 수정</a></div>
         </div>
-        <div class="ntwrap">
-            <div class="subtitle">공지사항 </div>
-            <div class="subtitle2">홈플러스의 새로운 소식들과 유용한 정보들을 확인 하세요.</div>
-            <table>
-                <tr>
-                    <th>작성일</th>
-                    <th>카테고리</th>
-                    <th>제목</th>
-                    <th>조회수</th>
-                </tr>
-                <script>
-                    for (i = 1; i <= 10; i++) {
-                        tableTag = "<tr>"
-                        tableTag += "<td>20-01-01</td>"
-                        tableTag += "<td>카테고리</td>"
-                        tableTag += "<td>가격이 인상 됩니다.</td>"
-                        tableTag += "<td>100</td>"
-                        tableTag += "</tr>"
-                        document.write(tableTag)
-                    }
-                </script>
-            </table>
+        <div class="section">
+            <div class="subtitle">늘 사는 것</div>
+            <div class="subtitle2">늘 사는 것으로 등록하신 상품 목록 입니다.</div>
+            <div class="oderbox">
+                <div class="title">Hallo! 노르웨이 고등어 외 5건</div>
+                <div class="content">
+                    <img src="image/01_macaron.jpg">
+                    <div class="odtext">
+                        <div>주문번호 12121212</div>
+                        <div>결제금액 16,200원</div>
+                        <div>주문상태 배송완료</div>
+                    </div>
+                </div>
+            </div>
             <div class="pagewrap">
                 <div class="page"><a href="#">1</a></div>
                 <div class="page"><a href="#">2</a></div>

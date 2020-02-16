@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>09_cart</title>
+    <link rel="stylesheet" href="homeplus.css">
+    <style>
+        section {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .title {
+            width: 1200px;
+            font-size: 36px;
+            margin: 50px 0px;
+        }
+
+        .title>div {
+            text-align: center;
+        }
+
+        .title>div:nth-child(2) {
+            font-size: 15px;
+        }
+
+        .cartlist,
+        .hcartlist {
+            width: 1000px;
+            height: 110px;
+            margin: 0 auto;
+            overflow: hidden;
+            border-top: 1px solid #D5D5D5;
+            line-height: 70px;
+        }
+
+        .hcartlist {
+            height: 60px;
+            line-height: 20px;
+            border-top: 2px solid #f14242;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .hcartlist>div {
+            float: left;
+            width: 100px;
+            margin: 20px 0px;
+        }
+
+        .hcartlist>input {
+            width: 80px;
+            height: 20px;
+            float: left;
+            margin: 20px 0px;
+        }
+
+        .hcartlist>div:nth-child(3) {
+            width: 490px;
+        }
+
+        .cartlist>img {
+            float: left;
+            padding: 15px;
+        }
+
+        .cartlist>input[type="checkbox"] {
+            width: 80px;
+            height: 20px;
+            float: left;
+            margin: 45px 0px;
+        }
+
+        .cartlist>div {
+            width: 100px;
+            height: 110px;
+            float: left;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .namepri {
+            height: 110px;
+        }
+
+        .namepri>div {
+            height: 20px;
+            line-height: 50px;
+        }
+
+        .namepri>div:nth-child(1) {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .namepri>div:nth-child(2) {
+            font-size: 12px;
+        }
+
+        .cartlist>div:nth-of-type(1) {
+            width: 500px;
+            text-align: left;
+        }
+
+        input[type="button"] {
+            width: 100px;
+            height: 40px;
+            background-color: #fff;
+            border: 1px solid #f14242;
+            border-radius: 10px;
+            margin: 5px;
+        }
+        
+        .fcartlist{
+                        height: 60px;
+            line-height: 20px;
+            overflow: hidden;
+            text-align: center;
+            
+        }
+
+        .totalwrap {
+            width: 1000px;
+            height: 120px;
+            margin: 0px auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            /*background-color: aqua;*/
+        }
+
+        .totalwrap>div:nth-child(2n+1) {
+            width: 200px;
+            height: 100px;
+            margin: 10px;
+            float: left;
+            border: 1px solid #D5D5D5;
+            border-radius: 5px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .totalwrap>div:nth-child(2n) {
+            width: 20px;
+            height: 20px;
+            margin: 35px 10px;
+            float: left;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .totalwrap>div:last-child {
+            border: 1px solid #f14242;
+        }
+
+        .totalwrap>div>div {
+            margin: 5px;
+        }
+
+        .totalwrap>div>div:nth-child(1) {
+            font-size: 14px;
+        }
+
+        .totalwrap>div>div:nth-child(2) {
+            font-size: 20px;
+        }
+
+        .oderbt {
+            background-color: #f14242;
+            color: #fff;
+            width: 200px;
+            height: 50px;
+            margin: 0px auto;
+            border-radius: 5px;
+            line-height:50px;
+            text-align: center;
+            margin-bottom:100px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul class="headmenu">
+            <li class="hdmenu">
+                <a href="03_join.html">회원가입</a>
+            </li>
+            <li class="hdmenu">
+                <a href="02_login.html">로그인</a>
+            </li>
+            <li class="hdmenu"><a href="06_notice.html">고객센터</a></li>
+        </ul>
+    </header>
+    <div class="logo" align="center" style="margin-bottom: 30px">
+        <a href="index.html">
+            <img src="image/logo2.png" width="150px" height="60px">
+        </a>
+    </div>
+    <nav>
+        <ul class="gnb">
+            <li class="topmenu">
+                <div class="category"><a href="">전체카테고리</a></div>
+                <div class="category"><a href="04_itemlist.html">수산/해산/건어물</a></div>
+                <div class="category"><a href="04_itemlist.html">정육/계란/면/양념</a></div>
+                <div class="category"><a href="04_itemlist.html">국/반찬/메인요리</a></div>
+                <div class="category"><a href="04_itemlist.html">채소/과일/견과/쌀</a></div>
+                <div class="category"><a href="04_itemlist.html">음료/간식/건강식품</a></div>
+            </li>
+            <li class="topmenu">
+                <a href="04_itemlist.html">신상품</a>
+            </li>
+            <li class="topmenu">
+                <a href="04_itemlist.html">베스트</a>
+            </li>
+            <li class="topmenu">
+                <a href="04_itemlist.html">알뜰쇼핑</a>
+            </li>
+            <li class="topmenu">
+                <a href="04_itemlist.html">이벤트</a>
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <div class="title">
+            <div>장바구니</div>
+            <div>주문하실 상품명 및 수량을 정확하게 확인해 주세요.</div>
+        </div>
+        <div>
+            <div class="hcartlist">
+                <input type="checkbox">
+                <div>전체선택(4/4)</div>
+                <div>상품 정보</div>
+                <div>수량</div>
+                <div>상품금액</div>
+            </div>
+            <div class="cartlist">
+                <input type="checkbox">
+                <img src="http://placehold.it/60x80" />
+                <div class="namepri">
+                    <div><a href="#">직화 오돌뼈(국내산)</a></div>
+                    <div>5,000원</div>
+                </div>
+                <div>1</div>
+                <div>5,000원</div>
+                <div>X</div>
+            </div>
+            <div class="cartlist">
+                <input type="checkbox">
+                <img src="http://placehold.it/60x80" />
+                <div class="namepri">
+                    <div><a href="#">직화 오돌뼈(국내산)</a></div>
+                    <div>5,000원</div>
+                </div>
+                <div>1</div>
+                <div>5,000원</div>
+                <div>X</div>
+            </div>
+            <div class="fcartlist">
+                <input type="checkbox">전체선택(4/4)
+                <input type="button" value="선택삭제">
+                <input type="button" value="품절상품삭제">
+            </div>
+        </div>
+    </section>
+    <div class="totalwrap">
+        <div class="price">
+            <div>상품금액</div>
+            <div>5,000원</div>
+        </div>
+        <div>-</div>
+        <div class="discount">
+            <div>할인금액</div>
+            <div>0원</div>
+        </div>
+        <div>+</div>
+        <div class="decharge">
+            <div>배송비</div>
+            <div>3,000원</div>
+        </div>
+        <div>=</div>
+        <div class="total">
+            <div>결제예정금액</div>
+            <div>8,000원</div>
+        </div>
+    </div>
+
+    <div>
+        <div class="oderbt"><a href="#">주문하기</a></div>
+    </div>
+    <footer>
+        <div class="footer">
+            <p>
+                footer
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

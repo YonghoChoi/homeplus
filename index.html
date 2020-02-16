@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>01_main</title>
+    <link rel="stylesheet" href="homeplus.css">
+    <style>
+        .mainbanner {
+            width: 1280px;
+            height: 400px;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        .mainbanner>div {
+            left: 50%;
+            margin-left: -640px;
+            width: 100%;
+            position: absolute;
+        }
+
+        .section1 {
+            width: 1100px;
+            height: 410px;
+            margin: 0px auto;
+            margin-bottom: 100px;
+        }
+
+        .article {
+            width: 275px;
+            height: 410px;
+            float: left;
+        }
+
+        .item_1 {
+            width: 255px;
+            height: 320px;
+            background-color: darkgrey;
+            margin: 10px;
+        }
+
+        .text_1 {
+            width: 255px;
+            height: 50px;
+            /*background-color: darkgrey;*/
+            margin: 10px;
+        }
+
+        .section2 {
+            width: 1100px;
+            height: 244px;
+            margin: 10px auto;
+            margin-bottom: 100px;
+        }
+
+        .today1 {
+            width: 530px;
+            margin: 10px;
+            float: left;
+        }
+
+        .today2 {
+            margin: 10px;
+            width: 530px;
+            float: left;
+        }
+
+        .todaytext {
+            width: 200px;
+            height: 224px;
+            float: left;
+            font-size: 24px;
+            color: #f14242;
+        }
+
+        .todayimg {
+            width: 330px;
+            height: 224px;
+            background-color: darkgray;
+            float: left;
+        }
+
+        .md {
+            width: 1100px;
+            height: 50px;
+            margin: 0px auto;
+        }
+
+        .mdbutton {
+            width: 1100px;
+            margin: 0px auto;
+            box-sizing: border-box;
+        }
+
+        input {
+            margin: 10px 10px 20px 10px;
+            width: 200px;
+            height: 40px;
+            padding: 10px;
+            border: solid 0px grey;
+            border-radius: 20px;
+            background-color: #f14242;
+            color: #fff;
+            float: left;
+        }
+
+        input[type="search"] {
+            background-color: #EAEAEA;
+            width: 200px;
+            height: 30px;
+            margin:0px;
+            color:darkgray;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <ul class="headmenu">
+            <li class="hdmenu">
+                <a href="03_join.html">회원가입</a>
+            </li>
+            <li class="hdmenu">
+                <a href="02_login.html">로그인</a>
+            </li>
+            <li class="hdmenu"><a href="06_notice.html">고객센터</a></li>
+        </ul>
+    </header>
+
+    <div class="logo" align="center" style="margin-bottom: 30px">
+        <a href="index.html">
+            <img src="image/logo2.png" width="150px" height="60px">
+        </a>
+    </div>
+
+    <nav>
+        <ul class="gnb">
+            <li class="topmenu1">
+                <div><a href="">전체카테고리</a></div>
+                <div class="category"><a href="04_itemlist.html">수산/해산</a></div>
+                <div class="category"><a href="04_itemlist.html">정육/계란</a></div>
+                <div class="category"><a href="04_itemlist.html">면/양념</a></div>
+                <div class="category"><a href="04_itemlist.html">국/반찬</a></div>
+                <div class="category"><a href="04_itemlist.html">메인요리</a></div>
+                <div class="category"><a href="04_itemlist.html">채소/과일</a></div>
+                <div class="category"><a href="04_itemlist.html">견과/쌀</a></div>
+                <div class="category"><a href="04_itemlist.html">음료/간식</a></div>
+                <div class="category"><a href="04_itemlist.html">건강식품</a></div>
+            </li>
+            <li class="topmenu">
+                <a href="04_itemlist.html">신상품</a>
+            </li>
+            <li class="topmenu">
+                <a href="04_itemlist.html">베스트</a>
+            </li>
+            <li class="topmenu">
+                <a href="04_itemlist.html">알뜰쇼핑</a>
+            </li>
+            <li class="topmenu">
+                <a href="04_itemlist.html">이벤트</a>
+            </li>
+            <input type="search">
+        </ul>
+    </nav>
+    <div class="mainbanner">
+        <div><img src="image/banner1.jpg"></div>
+    </div>
+    <p align="center" style="margin:50px 20px 20px 20px ; font-size: 20px">
+        추천 상품 리스트
+    </p>
+    <div class="section1">
+        <div class="article" style="align:center">
+            <div class="item_1"><a href="05_itempage.html"><img src="image/01_macaron.jpg"></a></div>
+            <div class="text_1">
+                <p>새콤 달콤한 딸기마카롱</p>
+                <p><b>5,000원</b></p>
+            </div>
+        </div>
+        <div class="article" style="align:center">
+            <div class="item_1"><img src="image/05_bibigo.jpg"></div>
+            <div class="text_1">
+                <p>비비고 군교자</p><b>7,000원</b>
+            </div>
+        </div>
+        <div class="article" style="align:center">
+            <div class="item_1"><img src="image/03_salami.jpg"></div>
+            <div class="text_1">
+                <p>살라미 모듬 </p><b>12,000원</b>
+            </div>
+        </div>
+        <div class="article" style="align:center">
+            <div class="item_1"><img src="image/04_oange.jpg"></div>
+            <div class="text_1">
+                <p>제철 맞은 오렌지</p><b>10,000원</b>
+            </div>
+        </div>
+    </div>
+
+    <div class="section2">
+        <div class="today1">
+            <div class="todaytext"><b>TODAY 특가</b>
+                <p style="font-size:16px; color:darkgrey">완전 좋은 제품입니다!</p><br />
+                <p style="color:#4C4C4C ; font-size:20px">칠레산 생체리<br />4,500원</p>
+            </div>
+            <img src="image/01_todaybanner.jpg">
+        </div>
+        <div class="today2">
+
+            <img src="http://placehold.it/330x224">
+            <div class="todaytext"><b>TODAY 특가</b>
+                <p style="font-size:16px; color:darkgrey">완전 좋은 제품입니다!</p><br />
+                <p style="color:#4C4C4C ; font-size:20px">칠레산 생체리<br />4,500원</p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <p align="center" style="margin:20px ; font-size: 20px">
+            MD추천
+        </p>
+
+        <div class="md">
+            <div class="mdbutton">
+                <input type="button" value="채소/과일/견과/쌀">
+                <input type="button" value="수산/해산/건어물">
+                <input type="button" value="정육/계란/면/양념">
+                <input type="button" value="국/반찬/메인요리">
+                <input type="button" value="음료/간식/건강식품">
+            </div>
+        </div>
+        <!-- button 개행 시 4px 간격 생김 >> float로 없애주거나 개행을 없애거나 -4px을 잡아줌 -->
+
+        <div class="section1">
+            <div class="article" style="align:center">
+                <div class="item_1">상품이미지</div>
+                <div class="text_1">상품 텍스트</div>
+            </div>
+            <div class="article" style="align:center">
+                <div class="item_1">상품이미지</div>
+                <div class="text_1">상품 텍스트</div>
+            </div>
+            <div class="article" style="align:center">
+                <div class="item_1">상품이미지</div>
+                <div class="text_1">상품 텍스트</div>
+            </div>
+            <div class="article" style="align:center">
+                <div class="item_1">상품이미지</div>
+                <div class="text_1">상품 텍스트</div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <p>
+                    footer <a href="../mobile/index.html">모바일 버전 보기</a>
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+
+</body>
+
+</html>
