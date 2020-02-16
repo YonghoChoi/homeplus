@@ -199,7 +199,7 @@
         <fieldset>
             <label for="email">이메일</label>
             <input type="text" name="email" id="email" placeholder="ex)homeplus@naver.com">
-            <input type="button" name="email" value="중복 확인">
+            <input type="button" name="email" value="중복 확인" onclick="checkDulplicateEmail()">
 
 
 
@@ -241,12 +241,12 @@
     <h2 align="center" style="margin:30px">이용약관동의 </h2>
     <div class="terms">
         <fieldset>
-            <input type="checkbox" id="agree1" value="agree1">
+            <input type="checkbox" id="agree1" value="agree1" class="require">
             <label for="agree1" class="agree"></label>
             <label for="agree1" class="agree_text">이용약관(필수) 약관보기 ▷ </label>
         </fieldset>
         <fieldset>
-            <input type="checkbox" id="agree2" value="agree2">
+            <input type="checkbox" id="agree2" value="agree2" class="require">
             <label for="agree2" class="agree"></label>
             <label for="agree2" class="agree_text">개인정보처리방침(필수) 약관보기 ▷ </label>
         </fieldset>
@@ -272,7 +272,7 @@
         </fieldset>
 
         <fieldset>
-            <input type="checkbox" id="agree5" value="agree5">
+            <input type="checkbox" id="agree5" value="agree5" class="require">
             <label for="agree5" class="agree"></label>
             <label for="agree5" class="agree_text">본인은 만 14세 이상입니다.(필수)</label>
         </fieldset>
@@ -285,7 +285,7 @@
     <div align="center">
         <input type="submit" value="가입" style="background-color: #f14242; 
             border:0px solid grey; width:150px; height:42px; margin:20px; margin-bottom:100px;           
-            border-radius: 5px; color:#fff">
+            border-radius: 5px; color:#fff" onclick="join()">
     </div>
 
     <footer>
@@ -297,6 +297,7 @@
     </footer>
     <script>
         var ids = ["yesol", "simba"];
+        var emails = ["yesol@gmail.com", "simba@gmail.com"];
         function checkDulplicateId() {
             const pid = document.getElementById("pid");
             for(let idx in ids) {
@@ -307,6 +308,31 @@
             }
             
             alert("사용할 수 있는 아이디입니다.");
+        }
+
+        
+        function checkDulplicateEmail() {
+            const pid = document.getElementById("email");
+            for(let idx in emails) {
+                if(pid.value === emails[idx]) {
+                    alert("이미 존재하는 이메일 입니다.");
+                    return;
+                }
+            }
+            
+            alert("사용할 수 있는 이메일입니다.");
+        }
+
+        function join() {
+            var requireCheckBoxs = document.getElementsByClassName("require");
+            for(i = 0; i < requireCheckBoxs.length; i++) {
+                if(!requireCheckBoxs[i].checked) {
+                    alert("필수 항목에 체크해주세요.");
+                    return;
+                }
+            }
+
+            alert("가입에 성공하였습니다.");
         }
     </script>
 
